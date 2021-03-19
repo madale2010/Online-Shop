@@ -1,0 +1,712 @@
+/*
+* Madbox-solutions.com
+* Author: Adam Dale
+* 
+* Description: Apply project specific templates need per clients design.
+*/
+/**************************************************************************
+ * Fonts                
+ **************************************************************************/
+ 
+@font-face {
+	font-family: 'underwood_championregular';
+	src: url('../fonts/underwood_champion-webfont.eot');
+	src: url('../fonts/underwood_champion-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../fonts/underwood_champion-webfont.woff2') format('woff2'),
+		url('../fonts/underwood_champion-webfont.woff') format('woff'),
+		url('../fonts/underwood_champion-webfont.ttf') format('truetype'),
+		url('../fonts/underwood_champion-webfont.svg#underwood_championregular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'veteran_typewriterregular';
+	src: url('veteran_typewriter-webfont.eot');
+	src: url('veteran_typewriter-webfont.eot?#iefix')
+		format('embedded-opentype'), url('veteran_typewriter-webfont.woff2')
+		format('woff2'), url('veteran_typewriter-webfont.woff') format('woff'),
+		url('veteran_typewriter-webfont.ttf') format('truetype'),
+		url('veteran_typewriter-webfont.svg#veteran_typewriterregular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'carbontyperegular';
+	src: url('carbontype-webfont.eot');
+	src: url('carbontype-webfont.eot?#iefix') format('embedded-opentype'),
+		url('carbontype-webfont.woff2') format('woff2'),
+		url('carbontype-webfont.woff') format('woff'),
+		url('carbontype-webfont.ttf') format('truetype'),
+		url('carbontype-webfont.svg#carbontyperegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/**************************************************************************
+ * FONT STYLES LABELS               
+ **************************************************************************/
+.label-font {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	text-align: center;
+}
+
+.label-font-tc {
+	font-family: 'underwood_championregular';
+	text-align: center;
+}
+
+.label-font-ct {
+	font-family: 'underwood_championregular';
+	color: #000000;
+}
+
+/**************************************************************************
+ * Drop down's and submenu actions               
+ **************************************************************************/
+.dropdown-submenu {
+	position: relative
+}
+
+.dropdown-submenu>.dropdown-menu {
+	top: 0px;
+	down: 100%;
+	margin-top: 32px;
+	margin-left: -1px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block
+}
+
+.dropdown-submenu>a:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-right: .25rem;
+	margin-left: .25rem;
+	vertical-align: middle;
+	content: "";
+	border-top: .3em solid;
+	border-right: .3em solid transparent;
+	border-left: .3em solid transparent;
+}
+/* Sub menu that drops to the side for better visual*/
+.dropdown-submenu-right {
+	position: relative
+}
+
+.dropdown-submenu-right>.dropdown-menu {
+	left: 100%;
+	margin-left: -1px;
+	margin-top: -35px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.dropdown-submenu-right:hover>.dropdown-menu {
+	display: block
+}
+
+.dropdown-submenu-right>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #000000;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+/**************************************************************************
+ * Other                
+ **************************************************************************/
+.form-inline .form-control-label-top {
+	margin-bottom: 0;
+	vertical-align: top;
+}
+/* font default for website color background and style */
+.custom {
+	background-color: white;
+	font-family: 'underwood_championregular';
+	color: #000000;
+}
+
+.thumb-sm {
+	width: 50px;
+	higth: 50px;
+}
+
+.madbox-link {
+	color: #000000;
+	margin-top: 100px;
+}
+
+.circle {
+	background-color: #86a2ca;
+	color: #86a2ca;
+	width: 85px;
+	higth: 85px;
+}
+
+.temp {
+	color: red;
+}
+
+.sold-out {
+	color: red;
+	background-color: transparent;
+	border: none;
+}
+
+.img-responsive-blog {
+	hight: 200px;
+	width: 200px;
+}
+
+.blog-edit-image {
+	width: 100%;
+	height: 300px;
+	overflow-x: auto;
+}
+
+.blog-link:hover {
+	text-decoration: none;
+}
+
+#blogLimit {
+	display: block;
+	/* Fallback for non-webkit */
+	display: -webkit-box;
+	max-width: 85%;
+	height: 100px;
+	/* Fallback for non-webkit */
+	margin: 0 auto;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.logo-properties {
+	
+}
+
+.no-padding {
+	border-width: 5px;
+	border-color: Black;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.label-font {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	text-align: center;
+}
+
+.pic-container {
+	width: 100%;
+	height: 300px;
+	overflow-x: auto;
+}
+
+.img-gallery-sm {
+	width: 200px;
+	heigh: 200px;
+}
+
+.img-responsive-checkout {
+	max-width: 100%;
+	height: 100px;
+}
+
+.img-custom-thumb {
+	width: 150px;
+	height: 125px;
+}
+
+.img-responsive-custom {
+	width: 200px;
+	height: 200px;
+}
+
+.img-carousel-custom {
+	display: block;
+	max-width: 200px;
+	height: 100px;
+}
+
+.img-product {
+	border: 1px solid #c0c0c0;
+}
+
+.thumbnail-custom {
+	max-width: 90%;
+	max-height: 90%;
+	display: block;
+	padding: .5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #fff;
+	border: .2px solid #c0c0c0;
+	border-radius: 0px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+}
+
+#inputBlogInfo {
+	width: 600px;
+}
+
+@media ( min-width : 768px ) {
+	.row {
+		position: relative;
+	}
+	.bottom-align-text {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+.blog-image {
+	height: 200px;
+	width: 400px;
+}
+/**************************************************************************
+ * NAV BARS                
+ **************************************************************************/
+.nav-tabs-center .nav-item {
+	float: none;
+	margin-right: auto;
+	text-align: center;
+}
+
+.navbar .navbar-custom {
+	display: inline-block;
+	float: none;
+}
+
+.navbar .divider-vertical {
+	height: 40px;
+	margin: 0 9px;
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #ffffff;
+}
+
+.navbar-custom2 {
+	background-color: white;
+}
+
+.form-custom>div>label {
+	text-align: right;
+}
+
+.navbar .navbar-custom {
+	font-family: 'underwood_championregular';
+	/* (../images/graywoodcrop.jpg); */
+	/*     background-size: auto; */
+	color: #000000;
+	text-align: center;
+}
+
+.nav-link {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.btn-custom {
+	font-family: 'underwood_championregular';
+	font-weight: bold;
+	color: #000000;
+	background-color: transparent;
+}
+
+.navbar-custom {
+	font-family: 'underwood_championregular';
+	/* 	    background-image: url(../images/woodbackground.jpg); */
+	background-size: auto;
+	color: #000000;
+	background-color: #86a2ca;
+}
+
+.navbar-nav {
+	font-family: 'underwood_championregular';
+	color: #000000;
+}
+/**************************************************************************
+ * CONTAINER                
+ **************************************************************************/
+.col-1 {
+	width: 11.7%;
+}
+
+.col-2 {
+	width: 18%;
+}
+
+.col-3 {
+	width: 27%;
+}
+
+.col-4 {
+	width: 33%;
+}
+
+.col-half {
+	width: 50%;
+}
+
+.no-gutter>[class*='col-'] {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+	border: none;
+}
+
+.container-custom {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	padding-right: 15px;
+	padding-left: 15px;
+	
+	border: none;
+}
+.spaced-col {
+  padding: 0px 0px;
+}
+
+.container-custom-c {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	font-weight: bold;
+	align: center;
+}
+
+.container-custom2 {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	background-color: #86a2ca;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.custom-footer {
+	padding-top: 5px;
+	font-family: 'underwood_championregular';
+	color: #000000;
+	background-color: #86a2ca;
+}
+
+.custom-footer ul li>p {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	font-weight: bold;
+	background-color: #86a2ca;
+}
+
+.custom-footer ul li>a {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	background-color: #86a2ca;
+}
+
+.container-custom>h2 {
+	font-family: 'underwood_championregular';
+	color: #000000;
+	background-color: #86a2ca;
+}
+/**************************************************************************
+ * TABLE                Any table overrides will go here 
+ **************************************************************************/
+/*
+
+We want to set <th> and <td> elements to float left.
+We also must explicitly set the width for each column (both for the <th>
+and the <td>).  We set to 20% here a default placeholder, but it can be
+overridden elsewhere.
+*/
+.table-custom>tr>th {
+	font-family: 'underwood_championregular';
+	color: #000000;
+}
+
+#tableDescription {
+	border: none;
+}
+
+table.table-fixedheader>thead tr th, table.table-fixedheader>tbody tr td
+	{
+	float: left;
+	word-wrap: break-word;
+}
+
+table.table-fixedheader>tbody {
+	overflow-y: scroll;
+	height: 270px;
+}
+/*
+Force table width to 100%
+*/
+table.table-fixedheader {
+	width: 100%;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th,
+	.table-borderless thead tr th {
+	border: none;
+}
+/*
+We really don't want to scroll the thead contents, but we want to force
+a scrollbar to be displayed anyway so that the usable width of the thead
+will exactly match the tbody.
+*/
+table.table-fixedheader>thead {
+	overflow-y: none;
+}
+
+table.table-fixedheader>thead::-webkit-scrollbar {
+	background-color: inherit;
+}
+
+table.table-fixedheader>thead>tr>th:after, table.table-fixedheader>tbody>tr>td:after
+	{
+	content: ' ';
+	display: table-cell;
+	visibility: hidden;
+	clear: both;
+}
+
+table.table-fixedheader>thead>tr>th {
+	height: 50px;
+	padding-top: 10px;
+}
+
+/*
+Set table elements to block mode.  (Normally they are inline).
+This allows a responsive table, such as one where columns can be stacked
+if the display is narrow.
+*/
+table.table-fixedheader, table.table-fixedheader>thead, table.table-fixedheader>tbody,
+	table.table-fixedheader>thead>tr, table.table-fixedheader>tbody>tr,
+	table.table-fixedheader>thead>tr>th, table.table-fixedheader>tbody>td {
+	display: block;
+}
+
+table.table-fixedheader>thead>tr:after, table.table-fixedheader>tbody>tr:after
+	{
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+table-fixed thead {
+	width: 97%;
+}
+
+.table-fixed tbody {
+	height: 230px;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td,
+	.table-fixed th {
+	display: block;
+}
+
+.table-fixed tbody td, .table-fixed thead>tr>th {
+	float: left;
+	border-bottom-width: 0;
+}
+
+.fixed-table .header-fixed {
+	position: absolute;
+	top: 0px;
+	z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+	border-bottom: 2px solid #d5d5d5;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.fixed-table {
+	display: block;
+	position: relative;
+}
+
+.fixed-table th {
+	padding: 8px;
+	line-height: 18px;
+	text-align: left;
+}
+
+.fixed-table .table-content {
+	display: block;
+	position: relative;
+	height: 200px; /*FIX THE HEIGHT YOU NEED*/
+	overflow-y: auto;
+}
+
+.fixed-table .header-copy {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fixed-table .header-copy th {
+	background-color: #fff;
+}
+
+/**************************************************************************
+ * CAROUSEL       Any carousel overrides will go here C
+ **************************************************************************/
+.carousel-indicators li {
+	visibility: hidden;
+}
+
+.carousel-inner .carousel-item {
+	font-size: 10px;
+	color: #0404B4
+}
+
+.carousel-control {
+	z-index: 10;
+	top: 2%;
+	width: 30px;
+	//
+	no
+	more
+	gray
+	thing
+}
+
+div.c-wrapper {
+	width: 100%;
+	for
+	example
+	margin
+	:
+	auto;
+}
+
+.carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img
+	{
+	resize: both;
+	width: 250px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.carousel-inner>.carousel-item>.carousel-caption {
+	color: #000000;
+	text-align: center;
+	bottom: -10%;
+}
+/* .carousel-inner > .carousel-item > img,  */
+/* .carousel-inner > .carousel-item > a > img{ */
+/* width: 50%; use this, or not */
+/* margin: auto; */
+/* } */
+.carousel-control.left, .carousel-control.right {
+	background: none
+}
+
+.carousel-control.left {
+	left: 200px;
+	color: black;
+}
+
+.carousel-control.right {
+	right: 200px;
+	color: black;
+}
+
+.carousel-control .glyphicon, .carousel-control .icon-prev,
+	.carousel-control .icon-next {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 5;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: -10px;
+	font-family: serif;
+}
+/** The Magic **/
+.btn-breadcrumb .btn:not (:last-child ):after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 10px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: 100%;
+	z-index: 3;
+}
+
+.btn-breadcrumb .btn:not (:last-child ):before {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 10px solid rgb(173, 173, 173);
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	margin-left: 1px;
+	left: 100%;
+	z-index: 3;
+}
+/**************************************************************************
+ * Breadcrumb       Overrides will go here 
+ **************************************************************************/
+.fa:hover {
+	text-decoration: none
+}
+
+.fa-times {
+	color: #ff0000;
+	opacity: 1;
+}
+
+.fa-trash {
+	color: red;
+	opacity: 1;
+}

@@ -1,0 +1,6 @@
+java.io.FileNotFoundException: /C:/Program Files/Eclipse/configuration/org.eclipse.osgi/1001/0/.cp/
+	at org.codehaus.plexus.classworlds.launcher.ConfigurationParser.parse(ConfigurationParser.java:264)
+	at org.codehaus.plexus.classworlds.launcher.Configurator.configure(Configurator.java:133)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.configure(Launcher.java:131)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
